@@ -33,27 +33,27 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
        <form id="choosePizza">
          <div class="form-group" id="sizeList">
            <div class="radio">
-             <label><input type="radio" name="size" value="small">Small</label>
+             <label><input type="radio" name="size" value="small"> Small</label>
            </div>
            <div class="radio">
-             <label><input type="radio" name="size" value="medium">Medium</label>
+             <label><input type="radio" name="size" value="medium"> Medium</label>
            </div>
            <div class="radio">
-             <label><input type="radio" name="size" value="large">Large</label>
+             <label><input type="radio" name="size" value="large"> Large</label>
            </div>
          </div>
            <div class="form-group" id="toppingList">
            <div class="checkbox">
-             <label><input type="checkbox" name="array" value="pepperoni">Pepperoni </label>
+             <label><input type="checkbox" name="array" value="pepperoni"> Pepperoni </label>
            </div>
            <div class="checkbox">
-             <label><input type="checkbox" name="array" value="anchovies">Anchovies </label>
+             <label><input type="checkbox" name="array" value="anchovies"> Anchovies </label>
            </div>
            <div class="checkbox">
-             <label><input type="checkbox" name="array" value="mamaLils">Mama lil's </label>
+             <label><input type="checkbox" name="array" value="mamaLils"> Mama lil's </label>
            </div>
            <div class="checkbox">
-             <label><input type="checkbox" name="array" value="mushrooms">Mushrooms </label>
+             <label><input type="checkbox" name="array" value="mushrooms"> Mushrooms</label>
            </div>
            <button type="submit" class="btn btn-info btn-lg" id="submit" data-toggle="modal" data-target="#ticketModal">Buy</button>
            </div>
@@ -76,12 +76,15 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
              </div>
              <div class="modal-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
+               <button id="confirm" type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
              </div>
            </div>
          </div>
        </div>
-
+       <div>
+          <ul id='orderConfirmationWindow'>
+          </ul>
+       </div>
 
 
     </div>

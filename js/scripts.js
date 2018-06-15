@@ -1,14 +1,21 @@
 function Pizza (size, topping, price) {
   this.size = size;
-  this.topping = [];
+  this.toppings = [];
   this.price = 0
 }
 
+// Pizza.prototype.finalOrder = function() {
+//   return (<li> + this.size + </li> +
+//           <li> + this.toppings + </li> +
+//           <li> + this.price + </li>)
+// }
+
 Pizza.prototype.pizzaOrder = function() {
   $('#order').text(this.size);
-  $('#toppingUl').append(this.toppings + ',');
+  $('#toppingUl').append(this.toppings);
   $('#price').text('$' + (this.sizePrice() + this.toppingPrice()));
-  // return this.size + "," + this.topping ;
+  var list = this.toppings;
+  console.log(list);
 }
 
 Pizza.prototype.pizzaSize = function() {
@@ -20,9 +27,8 @@ Pizza.prototype.toppingChoice = function() {
   var toppingArray = []
   $("input[name='array']:checked").each(function ()
   {
-      toppingArray.push($(this).val());
+      toppingArray.push($(this).val() + ", ");
   });
-  console.log(toppingArray);
   return toppingArray
 
 }
@@ -52,10 +58,7 @@ $(document).ready(function() {
     $('#cover').hide();
   });
 
-
 var pizza = new Pizza ('size','toppings', 'price')
-var pizza2 = new Pizza ('size','toppings', 'price')
-var pizza3 = new Pizza ('size', 'toppigns','price')
 
 $(".radio").click(function(event){
   pizza.size = pizza.pizzaSize();
@@ -69,5 +72,12 @@ $("#submit").click(function() {
   event.preventDefault();
   $("#orderModal").modal();
   pizza.pizzaOrder();
+});
+
+$('#confirm').click(function() {
+  $('#orderConfirmationWindow').append('<li>' + pizza.size + '</li> '+
+                                        '<li>' + pizza.toppings + '</li> ' +
+                                        '<li>' + pizza.price + '</li> ');
+
   });
 });

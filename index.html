@@ -20,7 +20,54 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
   </head>
   <body>
     <div class="container">
-
+         <br>
+         <form id="choosePizza">
+           <div class="form-group" id="sizeList">
+             <div class="radio">
+               <label><input type="radio" name="size" value="small">Small</label>
+             </div>
+             <div class="radio">
+               <label><input type="radio" name="size" value="medium">Medium</label>
+             </div>
+             <div class="radio">
+               <label><input type="radio" name="size" value="large">Large</label>
+             </div>
+           </div>
+             <div class="form-group" id="toppingList">
+             <div class="checkbox">
+               <label><input type="checkbox" name="array" value="pepperoni">Pepperoni1</label>
+             </div>
+             <div class="checkbox">
+               <label><input type="checkbox" name="array" value="anchovies">Anchovies</label>
+             </div>
+             <div class="checkbox disabled">
+               <label><input type="checkbox" name="array" value="mamaLils" disabled>Mama lil's</label>
+             </div>
+             <button type="submit" class="btn btn-info btn-lg" id="submit" data-toggle="modal" data-target="#ticketModal">Buy</button>
+             </div>
+         </form>
+         <!-- <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">You're all set!</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <img class="thumbnail" src="" alt="">
+                 <h2 id="ticketTitle"></h2>
+                 <h4 id="ticketShowtime"></h4>
+                 <h4 id="ticketAge"></h4>
+                 <h3 id="ticketPrice"></h3>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal" id="done">Done</button>
+               </div>
+             </div>
+           </div>
+         </div> -->
 
 
 

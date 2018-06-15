@@ -11,4 +11,10 @@ body {
 
 #main {
   display: none;
+  margin-top: 5%;
+
+}
+
+heading {
+  text-align: center;
 }

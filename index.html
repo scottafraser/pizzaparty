@@ -30,36 +30,40 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
       </div>
     </div>
       <div class="container" id="main">
+      <div class="row" id="heading">
+      <h3>Build your own pizza:</h3>
+      </div>
+      <br>
       <div class="row">
         <div class="col">
-         <form id="choosePizza">
-           <div class="form-group" id="sizeList">
-             <div class="radio">
-               <label><input type="radio" name="size" value="small"> Small</label>
-             </div>
-             <div class="radio">
-               <label><input type="radio" name="size" value="medium"> Medium</label>
-             </div>
-             <div class="radio">
-               <label><input type="radio" name="size" value="large"> Large</label>
-             </div>
-           </div>
-         </div>
-         <div class="col">
-           <div class="form-group" id="toppingList">
-           <div class="checkbox">
-             <label><input type="checkbox" name="array" value=" pepperoni"> Pepperoni </label>
-           </div>
-           <div class="checkbox">
-             <label><input type="checkbox" name="array" value=" anchovies"> Anchovies </label>
-           </div>
-           <div class="checkbox">
-             <label><input type="checkbox" name="array" value=" mama Lil's"> Mama lil's </label>
-           </div>
-           <div class="checkbox">
-             <label><input type="checkbox" name="array" value=" mushrooms"> Mushrooms </label>
-           </div>
-           <button type="submit" class="btn btn-info btn-lg" id="submit" data-toggle="modal" data-target="#ticketModal">Buy</button>
+          <form id="choosePizza">
+            <div class="form-group" id="sizeList">
+              <div class="radio">
+                <label><input type="radio" name="size" value="small"> Small</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="medium"> Medium</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="large"> Large</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" id="toppingList">
+            <div class="checkbox">
+              <label><input type="checkbox" name="array" value=" pepperoni"> Pepperoni </label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="array" value=" anchovies"> Anchovies </label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="array" value=" mama Lil's"> Mama lil's </label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="array" value=" mushrooms"> Mushrooms </label>
+            </div>
+            <button type="submit" class="btn btn-info btn-lg" id="submit" data-toggle="modal"  data-target="#ticketModal">Buy</button>
            </div>
          </div>
        </form>

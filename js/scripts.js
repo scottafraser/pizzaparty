@@ -69,7 +69,7 @@ $("#submit").click(function() {
 });
 
 $('#confirm').click(function() {
-
+  $('#choosePizza')[0].reset();
   $('#orderConfirmationWindow').append('<li>' + pizza.size + '</li> '+
                                         '<li>' + pizza.toppings + '</li> ' +
                                         '<li>' + pizza.price + '</li> ');

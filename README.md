@@ -1,28 +1,29 @@
-# BeepBoop!
+# Pizza Party!
 
 #### Epicodus Intro to Programming:
-##### Friday Project 3
+##### Friday Project 4
 
 #### By NAME
 Scott Fraser
 
 ## Description
 
-Practice in arrays and looping
+Practice in constructs and prototypes
 
 | Behavior	| INPUT	| OUTPUT |
 | ----------| ----- | -------|
-|Program replaces any number with 0 with 'Beep!' | 0 | ["Beep!"]   
-|Program replaces any number with 1 with 'Boop!'| 1 | ["Boop!"] |
-|Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that"| 3| "I'm sorry, Dave. I'm afraid I can't do that" |
+|Allow user to choose size of pizza | 12'' | 12'' Pizza |   
+|Allow user to pick multiple toppings| pepperoni, olives | 12'' pizza, pepperoni, olives |
+|Program calculates the cost of the pizza based on size and number of toppings| small, 3 items | $22 |
 
 ## Setup/Contribution Requirements
 
 1. Clone the repo
 1. Open the website
-1. Type a number with as many digits as you like
+1. Click or select through form to create your pizza
 1. Click submit
-1. get your answer
+1. Get your total
+1. Hopefully you're not hungry, because this isn't a real pizza service, silly
 
 ## Technologies Used
 
@@ -31,7 +32,7 @@ Practice in arrays and looping
 
 ## Links
 
-* https://github.com/scottafraser/beepboop
+* https://github.com/scottafraser/pizzaparty
 
 ## License
 

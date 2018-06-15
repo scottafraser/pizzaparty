@@ -4,15 +4,9 @@ function Pizza (size, topping, price) {
   this.price = 0
 }
 
-// Pizza.prototype.finalOrder = function() {
-//   return (<li> + this.size + </li> +
-//           <li> + this.toppings + </li> +
-//           <li> + this.price + </li>)
-// }
-
 Pizza.prototype.pizzaOrder = function() {
   $('#order').text(this.size);
-  $('#toppingUl').append(this.toppings);
+  $('#toppingUl').append(this.toppings + '');
   $('#price').text('$' + (this.sizePrice() + this.toppingPrice()));
   var list = this.toppings;
   console.log(list);
@@ -27,7 +21,7 @@ Pizza.prototype.toppingChoice = function() {
   var toppingArray = []
   $("input[name='array']:checked").each(function ()
   {
-      toppingArray.push($(this).val() + ", ");
+      toppingArray.push($(this).val() + " ");
   });
   return toppingArray
 
@@ -75,6 +69,7 @@ $("#submit").click(function() {
 });
 
 $('#confirm').click(function() {
+
   $('#orderConfirmationWindow').append('<li>' + pizza.size + '</li> '+
                                         '<li>' + pizza.toppings + '</li> ' +
                                         '<li>' + pizza.price + '</li> ');

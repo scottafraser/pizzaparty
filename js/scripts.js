@@ -5,7 +5,10 @@ function Pizza (size, topping, price) {
 }
 
 Pizza.prototype.pizzaOrder = function() {
-  return this.size + "," + this.topping ;
+  $('#order').text(this.size);
+  $('#toppingUl').append(this.toppings + ',');
+  $('#price').text('$' + (this.sizePrice() + this.toppingPrice()));
+  // return this.size + "," + this.topping ;
 }
 
 Pizza.prototype.pizzaSize = function() {
@@ -19,7 +22,9 @@ Pizza.prototype.toppingChoice = function() {
   {
       toppingArray.push($(this).val());
   });
+  console.log(toppingArray);
   return toppingArray
+
 }
 
 Pizza.prototype.sizePrice = function() {
@@ -38,20 +43,19 @@ Pizza.prototype.toppingPrice = function() {
   var addOn = i + 1
   }
   return addOn
-  console.log(addOn);
 }
 
 
 $(document).ready(function() {
-
   $('#enter').click(function(event) {
     $('#main').fadeIn();
     $('#cover').hide();
   });
 
 
-
 var pizza = new Pizza ('size','toppings', 'price')
+var pizza2 = new Pizza ('size','toppings', 'price')
+var pizza3 = new Pizza ('size', 'toppigns','price')
 
 $(".radio").click(function(event){
   pizza.size = pizza.pizzaSize();
@@ -64,9 +68,6 @@ $("#toppingList").click(function(event){
 $("#submit").click(function() {
   event.preventDefault();
   $("#orderModal").modal();
-  $('#order').text(pizza.size);
-  $('#toppingUl').append('<li>' + pizza.toppings + '</li>');
-  $('#price').text('$' + (pizza.sizePrice() + pizza.toppingPrice()));
-  console.log((pizza.toppings).length);
+  pizza.pizzaOrder();
   });
 });

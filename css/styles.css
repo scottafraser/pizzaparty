@@ -1,0 +1,14 @@
+body {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#cover {
+  max-width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+#main {
+  display: none;
+}

@@ -44,6 +44,13 @@ Pizza.prototype.toppingPrice = function() {
 
 $(document).ready(function() {
 
+  $('#enter').click(function(event) {
+    $('#main').fadeIn();
+    $('#cover').hide();
+  });
+
+
+
 var pizza = new Pizza ('size','toppings', 'price')
 
 $(".radio").click(function(event){

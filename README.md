@@ -24,7 +24,7 @@ Practice in constructs and prototypes
 1. Open the website
 1. Click or select through form to create your pizza
 1. Click submit
-1. Get your total
+1. Get your order
 1. Hopefully you're not hungry, because this isn't a real pizza service, silly
 
 ## Technologies Used

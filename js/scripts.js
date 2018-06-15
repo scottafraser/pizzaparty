@@ -45,7 +45,6 @@ Pizza.prototype.toppingPrice = function() {
   return addOn
 }
 
-
 $(document).ready(function() {
   $('#enter').click(function(event) {
     $('#main').fadeIn();

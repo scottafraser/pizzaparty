@@ -26,21 +26,23 @@ Pizza.prototype.toppingChoice = function() {
 $(document).ready(function() {
 
 // var size =
-var pizza = new Pizza ('size, toppings')
+var pizza = new Pizza ('size','toppings')
 
   $(".radio").click(function(event){
-    var size = pizza.pizzaSize();
-    console.log(size);
+    pizza.size = pizza.pizzaSize();
+    console.log(pizza.size);
   });
 
   $("#toppingList").click(function(event){
-    var toppings = pizza.toppingChoice();
-    console.log(toppings);
+    pizza.toppings = pizza.toppingChoice();
+    console.log(pizza.toppings);
   });
 
 $("#submit").click(function() {
   event.preventDefault();
-  $('#order').append(pizza.pizzaOrder())
+  $("#orderModal").modal();
+  $('#order').text(pizza.size);
+  $('#toppingUl').append('<li>' + pizza.toppings + '</li>');
 
   });
 });

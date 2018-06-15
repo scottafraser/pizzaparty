@@ -35,17 +35,22 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
            </div>
              <div class="form-group" id="toppingList">
              <div class="checkbox">
-               <label><input type="checkbox" name="array" value="pepperoni">Pepperoni1</label>
+               <label><input type="checkbox" name="array" value="pepperoni">Pepperoni</label>
              </div>
              <div class="checkbox">
                <label><input type="checkbox" name="array" value="anchovies">Anchovies</label>
              </div>
-             <div class="checkbox disabled">
-               <label><input type="checkbox" name="array" value="mamaLils" disabled>Mama lil's</label>
+             <div class="checkbox">
+               <label><input type="checkbox" name="array" value="mamaLils">Mama lil's</label>
+             </div>
+             <div class="checkbox">
+               <label><input type="checkbox" name="array" value="mushrooms">Mushrooms</label>
              </div>
              <button type="submit" class="btn btn-info btn-lg" id="submit" data-toggle="modal" data-target="#ticketModal">Buy</button>
              </div>
          </form>
+         <div id="order">
+         </div>
          <!-- <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
            <div class="modal-dialog" role="document">
              <div class="modal-content">

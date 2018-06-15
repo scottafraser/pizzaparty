@@ -12,9 +12,11 @@ Practice in constructs and prototypes
 
 | Behavior	| INPUT	| OUTPUT |
 | ----------| ----- | -------|
-|Allow user to choose size of pizza | 12'' | 12'' Pizza |   
-|Allow user to pick multiple toppings| pepperoni, olives | 12'' pizza, pepperoni, olives |
-|Program calculates the cost of the pizza based on size and number of toppings| small, 3 items | $22 |
+|Allow user to choose size of pizza | click 'small'| small Pizza |   
+|Allow user to pick multiple toppings| click 'pepperoni, olives' | pepperoni, olives |
+|Program calculates the cost of the pizza based on size| 'small' | $10 |
+|Program calculates the cost of number of toppings| 3 items | + $3 |
+|Program calculates total cost of the pizza based on size and number of toppings| small, 3 items | $13 |
 
 ## Setup/Contribution Requirements
 
